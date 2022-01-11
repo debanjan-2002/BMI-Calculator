@@ -6,6 +6,7 @@
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
     user-select: none;
+    overflow: hidden;
 }
 .container{
     width: 100%;
