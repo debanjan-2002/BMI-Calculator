@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,700;1,400&display=swap');
+
+*,*::after,*::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    user-select: none;
+}
+.container{
+    width: 100%;
+    min-height: 100vh;
+    background-color: lightgrey;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container-box{
+    background-color: white;
+    padding: 1em 2em;
+    display: flex;
+    flex-direction: column;
+    gap: 1.7em;
+    width: 450px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 8px;
+}
+.container-box .heading{
+    /* border: 2px solid red; */
+    display: flex;
+    justify-content: center;
+}
+.heading h1{
+    /* display: inline-block; */
+    border-bottom: 6px solid rgb(36,157,246);
+    display: inline-block;
+}
+.gender{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    gap: 2em;
+}
+.gender > *{
+    flex: 1;
+    border: 2px solid lightgrey;
+    height: 5em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border-radius: 1em;
+    font-size: 1.3rem;
+    letter-spacing: 1px;
+    color: rgb(158, 156, 156);
+}
+.input-style{
+    border: 2px solid lightgrey;
+    height: 6em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 0.5em;
+}
+.input-style-input{
+    flex: 0.7;
+    width: 100%;
+    border: none;
+    outline: none;
+    text-align: center;
+    font-size: 2.5em;
+}
+input:focus::placeholder{
+    color: transparent;
+}
+.input-style-p{
+    color: rgb(158, 156, 156);
+}
+.border-selected{
+    border: 2px solid rgb(63, 57, 57);
+    color: rgb(105, 90, 90);
+    background-color: rgb(248, 248, 248);
+}
+.bmi-output{
+    flex-direction: row;
+}
+.bmi-output > *{
+    flex: 1;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2em;
+}
+.bmi-output .bmi-text{
+    border-right: 1px solid lightgrey;
+    color: rgb(71, 68, 68);
+}
+.bmi-output .output{
+    border-left: 1px solid lightgrey;
+    color: rgb(71, 68, 68);
+}
+button{
+    padding: 10px;
+    font-size: 1.1rem;
+    letter-spacing: 2px;
+    width: 100%;
+    background-color:rgb(36,157,246)
+    ;
+    color: white;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.message{
+    /* border: 2px solid black; */
+    height: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s, opacity 0.2s linear;
+}
