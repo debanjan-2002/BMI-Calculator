@@ -107,13 +107,16 @@ button{
     font-size: 1.1rem;
     letter-spacing: 2px;
     width: 100%;
-    background-color:rgb(36,157,246)
-    ;
+    background-color:rgb(36,157,246);
     color: white;
     border: none;
     outline: none;
     border-radius: 10px;
     cursor: pointer;
+    transition: all 0.2s;
+}
+button:hover{
+    background-color: rgb(57, 36, 246);
 }
 .message{
     /* border: 2px solid black; */
